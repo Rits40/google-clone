@@ -1,6 +1,5 @@
 
 import { TbGridDots } from 'react-icons/tb';
-// here /tb is a folder name from TbGridDots
 import Image from 'next/image';
 import Link from 'next/link';
 

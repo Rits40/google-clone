@@ -11,7 +11,6 @@ import dynamic from 'next/dynamic';
 
 const Main: React.FC = () => {
     const [search, setSearch] = useState<string>('');
-    // const [isClient, setIsClient] = useState(false)
 
     const {
         transcript,
@@ -43,9 +42,6 @@ const Main: React.FC = () => {
     if (!browserSupportsSpeechRecognition) {
         return null;
     }
-    // useEffect(() => {
-    //     setIsClient(true)
-    // }, [])
     
     return (
         <div className="items-center flex flex-col mt-28">
@@ -94,5 +90,4 @@ const Main: React.FC = () => {
     )
 };
 
-// export default Main;
 export default dynamic (() => Promise.resolve(Main), {ssr: false});
